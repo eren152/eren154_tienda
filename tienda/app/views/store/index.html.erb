@@ -1,0 +1,18 @@
+<h1>Catalog</h1>
+
+<% for articulo in @articulos -%>
+  <div class="entry">
+    <%= image_tag(articulo.photo.url(:thumb)) %>
+    <h3><%=h articulo.nombre %></h3>
+    <%= articulo.descripcion %>
+    <div class="price-line">
+    <span class="price"><%= number_to_currency(articulo.precio) %></span>
+    <p>Existencia:<%= articulo.cantidad %></p>
+    <!-- START_HIGHLIGHT -->
+    <!-- START:add_to_cart -->
+    <%= button_to "Add to Cart", :action => 'add_to_cart', :id =>articulo -%>
+    <!-- END:add_to_cart -->
+    <!-- END_HIGHLIGHT -->
+    </div>
+  </div>
+<% end %>

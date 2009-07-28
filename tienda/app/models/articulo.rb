@@ -24,4 +24,8 @@ class Articulo < ActiveRecord::Base
     :styles => {
       :thumb=> "100x100#",
       :small  => "150x150>" }
+ def self.find_products_for_sale
+  find(:all, :order => "nombre" )
+ end
+
 end
