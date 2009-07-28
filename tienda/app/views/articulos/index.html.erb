@@ -1,0 +1,26 @@
+<h1>Listing articulos</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Descripcion</th>
+    <th>Precio</th>
+    <th>Cantidad</th>
+  </tr>
+
+<% @articulos.each do |articulo| %>
+  <tr>
+    <td><%=h articulo.nombre %></td>
+    <td><%=h articulo.descripcion %></td>
+    <td><%=h articulo.precio %></td>
+    <td><%=h articulo.cantidad %></td>
+    <td><%= link_to 'Show', articulo %></td>
+    <td><%= link_to 'Edit', edit_articulo_path(articulo) %></td>
+    <td><%= link_to 'Destroy', articulo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @revistas %>
+<br />
+
+<%= link_to 'New articulo', new_articulo_path %>

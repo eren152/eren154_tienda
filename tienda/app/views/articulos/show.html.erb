@@ -1,0 +1,32 @@
+
+<p>
+  <%=h image_tag @articulo.photo.url %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%=h @articulo.nombre %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%=h @articulo.descripcion %>
+</p>
+
+<p>
+  <b>Precio:</b>
+  <%=h @articulo.precio %>
+</p>
+
+<p>
+  <b>Cantidad:</b>
+  <%=h @articulo.cantidad %>
+</p>
+
+<p>
+  <b>Foto:</b>
+  <%=h @articulo.photo %>
+</p>
+
+<%= link_to 'Edit', edit_articulo_path(@articulo) %> |
+<%= link_to 'Back', articulos_path %>
