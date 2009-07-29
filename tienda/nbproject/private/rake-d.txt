@@ -40,6 +40,7 @@ doc\:clobber_plugins=Remove plugin documentation
 doc\:clobber_rails=Remove rdoc products
 doc\:guides=Generate Rails guides
 doc\:plugins=Generate documentation for all installed plugins
+doc\:plugins\:minimalcart=Generate documentation for the minimalcart plugin
 doc\:plugins\:paperclip=Generate documentation for the paperclip plugin
 doc\:plugins\:restful-authentication=Generate documentation for the restful-authentication plugin
 doc\:rails=Build the RDOC HTML Files

@@ -1,5 +1,10 @@
-<h1>Listing articulos</h1>
-
+<%= render(:partial => "cart" , :object => @cart) %>
+<h2>Proceso de Compra..................................................... </h2>
+<br/>
+<br/>
+<br/>
+<%= " | #{link_to("Usuario ", users_path)}" if current_user.admin? %>| <%= link_to(" Salir ", '/logout') %>|<%= link_to ' New articulo ', new_articulo_path %>|
+<h1>Tus articulos</h1>
 <table>
   <tr>
     <th>Nombre</th>
@@ -23,4 +28,3 @@
 <%= will_paginate @revistas %>
 <br />
 
-<%= link_to 'New articulo', new_articulo_path %>

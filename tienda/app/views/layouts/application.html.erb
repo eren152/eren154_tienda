@@ -1,13 +1,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <title>Articulos:</title>
-    <%= stylesheet_link_tag 'scaffold' %>
-  </head>
-  <body>
-    <p style="color: green"><%= flash[:notice] %></p>
-    <%= yield %>
-  </body>
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>Online Store</title>
+<!-- START:stylesheet -->
+  <%= stylesheet_link_tag "depot", :media => "all" %><!-- <label id="code.slt"/> -->
+<!-- END:stylesheet -->
+</head>
+<body id="store">
+  <div id="banner">
+    <%= @page_title || "Online Store" %><!-- <label id="code.depot.e.title"/> -->
+  </div>
+  <div id="columns">
+    <div id="side">
+      <a href="http://www....">Home</a><br />
+      <a href="http://www..../usuario">Usuario</a><br />
+      <a href="http://www..../news">News</a><br />
+      <a href="http://www..../contact">Contact</a><br />
+    </div>
+    <div id="main">
+      <% if flash[:notice] -%>
+     <div id="notice"><%= flash[:notice] %></div>
+     <% end -%>
+
+      <%= yield :layout %><!-- <label id="code.depot.e.include"/> -->
+    </div>
+  </div>
+</body>
 </html>

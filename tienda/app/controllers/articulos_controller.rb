@@ -1,9 +1,11 @@
 class ArticulosController < ApplicationController
+  include AuthenticatedSystem
+  before_filter :login_required
   # GET /articulos
   # GET /articulos.xml
   def index
     @articulos = Articulo.paginate(:page => params[:page], :per_page => 10)
-
+    @cart = find_cart
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articulos }
@@ -81,5 +83,9 @@ class ArticulosController < ApplicationController
       format.html { redirect_to(articulos_url) }
       format.xml  { head :ok }
     end
+  end
+  private
+  def find_cart
+    session[:cart] ||= Cart.new
   end
 end

@@ -1,7 +1,8 @@
 class StoreController < ApplicationController
   include MinimalCart
   minimal_cart
-
+  #include AuthenticatedSystem
+  #before_filter :login_required
   def index
      @articulos = Articulo.find_products_for_sale
      @cart = find_cart
@@ -24,6 +25,12 @@ class StoreController < ApplicationController
     redirect_to :action => 'index'
   end
 
+ def comprar
+    @articulos = Articulo.find_products_for_sale
+    @cart = find_cart
+    redirect_to :action => 'index', :controller => 'articulos' #if current_user.admin
+ end
+
   private
   def find_cart
     session[:cart] ||= Cart.new
@@ -34,8 +41,5 @@ class StoreController < ApplicationController
    redirect_to :action => 'index'
   end
 
-  def comprar
-      @cart = find_cart
-  end
   
 end
