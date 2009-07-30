@@ -12184,3 +12184,250 @@ Rendering template within layouts/store
 Rendering store/index
 Rendered store/_cart (1.3ms)
 Completed in 36ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 10:41:11) [GET]
+  [4;36;1mArticulo Load (2.7ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (8.0ms)
+Completed in 230ms (View: 170, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-30 10:41:14) [POST]
+  Parameters: {"authenticity_token"=>"0t/7Ni+yuAYqlhPiF6cpQte+wZnMN6jerTIvSsKUKFM=", "id"=>"2"}
+  [4;35;1mArticulo Load (0.7ms)[0m   [0mSELECT * FROM "articulos" WHERE ("articulos"."id" = 2) [0m
+Redirected to http://localhost:3000/
+Completed in 37ms (DB: 1) | 302 Found [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 10:41:15) [GET]
+  [4;36;1mArticulo Load (1.7ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (9.2ms)
+Rendered store/_cart (14.4ms)
+Completed in 55ms (View: 36, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-30 10:41:15) [POST]
+  Parameters: {"authenticity_token"=>"0t/7Ni+yuAYqlhPiF6cpQte+wZnMN6jerTIvSsKUKFM=", "id"=>"2"}
+  [4;35;1mArticulo Load (0.8ms)[0m   [0mSELECT * FROM "articulos" WHERE ("articulos"."id" = 2) [0m
+Redirected to http://localhost:3000/
+Completed in 26ms (DB: 1) | 302 Found [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 10:41:15) [GET]
+  [4;36;1mArticulo Load (1.7ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.1ms)
+Completed in 39ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:14:48) [GET]
+  [4;35;1mArticulo Load (1.7ms)[0m   [0mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.7ms)
+Rendered store/_cart (2.1ms)
+Completed in 44ms (View: 24, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:14:49) [GET]
+  [4;36;1mArticulo Load (1.9ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.3ms)
+Completed in 43ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:14:50) [GET]
+  [4;35;1mArticulo Load (1.9ms)[0m   [0mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.1ms)
+Completed in 40ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:15:32) [GET]
+  [4;36;1mArticulo Load (3.3ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.7ms)
+Rendered store/_cart (2.1ms)
+Completed in 47ms (View: 24, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:15:33) [GET]
+  [4;35;1mArticulo Load (1.8ms)[0m   [0mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.1ms)
+Completed in 39ms (View: 19, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:15:35) [GET]
+  [4;36;1mArticulo Load (1.7ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.7ms)
+Rendered store/_cart (2.2ms)
+Completed in 95ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:16:00) [GET]
+  [4;35;1mArticulo Load (1.8ms)[0m   [0mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.7ms)
+Rendered store/_cart (2.2ms)
+Completed in 44ms (View: 24, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:19:14) [GET]
+  [4;36;1mArticulo Load (1.7ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.1ms)
+Completed in 43ms (View: 24, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:19:15) [GET]
+  [4;35;1mArticulo Load (1.7ms)[0m   [0mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.1ms)
+Completed in 38ms (View: 19, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:19:16) [GET]
+  [4;36;1mArticulo Load (1.8ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.1ms)
+Completed in 40ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:19:17) [GET]
+  [4;35;1mArticulo Load (1.7ms)[0m   [0mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.1ms)
+Completed in 39ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:21:10) [GET]
+  [4;36;1mArticulo Load (1.7ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.7ms)
+Rendered store/_cart (2.1ms)
+Completed in 46ms (View: 24, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:22:39) [GET]
+  [4;35;1mArticulo Load (1.7ms)[0m   [0mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.1ms)
+Completed in 44ms (View: 24, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:22:40) [GET]
+  [4;36;1mArticulo Load (1.8ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.7ms)
+Rendered store/_cart (2.2ms)
+Completed in 41ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:22:41) [GET]
+  [4;35;1mArticulo Load (1.8ms)[0m   [0mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.1ms)
+Completed in 39ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:22:42) [GET]
+  [4;36;1mArticulo Load (1.8ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.7ms)
+Rendered store/_cart (2.2ms)
+Completed in 38ms (View: 19, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:23:08) [GET]
+  [4;35;1mArticulo Load (2.8ms)[0m   [0mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.7ms)
+Rendered store/_cart (2.2ms)
+Completed in 108ms (View: 26, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:23:09) [GET]
+  [4;36;1mArticulo Load (1.7ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.8ms)
+Rendered store/_cart (2.5ms)
+Completed in 40ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 12:29:56) [GET]
+  [4;35;1mArticulo Load (2.9ms)[0m   [0mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.8ms)
+Rendered store/_cart (2.5ms)
+Completed in 45ms (View: 24, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 13:19:12) [GET]
+  [4;36;1mArticulo Load (6.3ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart (2.1ms)
+Completed in 49ms (View: 23, DB: 6) | 200 OK [http://localhost/]
+
+
+Processing StoreController#comprar (for 127.0.0.1 at 2009-07-30 13:33:38) [POST]
+  Parameters: {"authenticity_token"=>"0t/7Ni+yuAYqlhPiF6cpQte+wZnMN6jerTIvSsKUKFM="}
+  [4;35;1mArticulo Load (1.9ms)[0m   [0mSELECT * FROM "articulos" ORDER BY nombre[0m
+Redirected to http://localhost:3000/articulos
+Completed in 24ms (DB: 2) | 302 Found [http://localhost/store/comprar]
+
+
+Processing ArticulosController#index (for 127.0.0.1 at 2009-07-30 13:33:38) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/articulos]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-30 13:33:38) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 51ms (View: 47, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-30 16:21:29) [GET]
+  [4;36;1mArticulo Load (1.7ms)[0m   [0;1mSELECT * FROM "articulos" ORDER BY nombre[0m
+Rendering template within layouts/store
+Rendering store/index
+Rendered store/_cart (1.2ms)
+Completed in 35ms (View: 18, DB: 2) | 200 OK [http://localhost/]
